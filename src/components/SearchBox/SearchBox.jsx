@@ -7,9 +7,14 @@ const SearchBox = () => {
 
     return (
         <div className={s.searchBox}>
-            <label>
+            <label htmlFor="search">
                 Find contacts by name
-                <input type='search' placeholder='Search...' onChange={e => dispatch(changeFilter(e.target.value))} />
+                <input id="search"
+                    name="search"
+                    type="search"
+                    placeholder="Search..."
+                    autoComplete="off"
+                    onChange={e => dispatch(changeFilter(e.target.value))} />
             </label>
         </div>
     );

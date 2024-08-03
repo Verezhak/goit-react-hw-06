@@ -36,12 +36,12 @@ const ContactForm = () => {
             >
                 <Form>
                     <label htmlFor="name">Name
-                        <Field name="name" type='search' />
+                        <Field name="name" type='search' id="name" autoComplete="name" />
                     </label>
                     <ErrorMessage name="name" component="div" className={s.error} />
 
                     <label htmlFor="number">Number
-                        <Field name="number" type='search' />
+                        <Field name="number" type='search' id="number" autoComplete="tel" />
                     </label>
                     <ErrorMessage name="number" component="div" className={s.error} />
 
